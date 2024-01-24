@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: quarkus-social-db
+    environment:
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
